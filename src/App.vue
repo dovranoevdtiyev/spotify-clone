@@ -42,17 +42,18 @@
                 <button type="button" class="rounded-full bg-black p-[1px] hover:bg-[#] ml-4 cursor-pointer">
                     <ChevronRight fillColor="#FFFFFF" :size="30" />
                 </button>
+                <input placeholder="What do you want listen to?" class=" font-sans items-center placeholder:text-gray-500 placeholder:text-xs bg-[#1C1C1C] border-solid border-2 border-white text-white px-4 rounded-full w-80 h-10"  />
             </div>
 
             <button @click="openMenu = !openMenu" :class="openMenu ? 'bg-[#282828]' : 'bg-black'"
                 class="bg-black hover:bg-[#282828] rounded-full p-0.5 mr-8 mt-0.5 cursor-pointer">
-                <div class="flex items-center">
+                <div class="flex items-center ">
                     <img 
                       class="rounded-full" 
                       width="27"
-                      src="https://yt3.ggpht.com/e9o-24_frmNSSVvjS47rT8qCHgsHNiedqgXbzmrmpsj6H1ketcufR1B9vLXTZRa30krRksPj=s88-c-k-c0x00ffffff-no-rj-mo"
+                      src="./assets/download.jpeg"
                     >
-                    <div class="text-white text-[14px] ml-1.5 font-semibold">John Weeks Dev</div>
+                    <div class="text-white text-[14px] ml-1.5 font-semibold">Dorvan Oevtdiyev</div>
                     <ChevronDown v-if="!openMenu" @click="openMenu = true" fillColor="#FFFFFF" :size="25" />
                     <ChevronUp v-else @click="openMenu = false" fillColor="#FFFFFF" :size="25" />
                 </div>
