@@ -42,7 +42,7 @@
                 <button type="button" class="rounded-full bg-black p-[1px] hover:bg-[#] ml-4 cursor-pointer">
                     <ChevronRight fillColor="#FFFFFF" :size="30" />
                 </button>
-                <input placeholder="What do you want listen to?" class=" font-sans items-center placeholder:text-gray-500 placeholder:text-xs bg-[#1C1C1C] border-solid border-2 border-white text-white px-4 rounded-full w-80 h-10"  />
+                <input v-model="search" placeholder="What do you want listen to?" class=" ml-6 font-sans items-center placeholder:text-gray-500 placeholder:text-xs bg-[#1C1C1C] border-solid border-2 border-white text-white px-4 rounded-full w-80 h-10"  />
             </div>
 
             <button @click="openMenu = !openMenu" :class="openMenu ? 'bg-[#282828]' : 'bg-black'"

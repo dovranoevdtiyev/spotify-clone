@@ -9,6 +9,7 @@ export const useSongStore = defineStore('song', {
     currentTrack: null
   }),
   actions: {
+
     loadSong(artist, track) {
         this.currentArtist = artist
         this.currentTrack = track
@@ -28,7 +29,11 @@ export const useSongStore = defineStore('song', {
         }, 200)
     },
 
-    playOrPauseSong() {
+    filteredSongs(){
+        return this.items.filter(item=>item.includes(this.search))
+
+    },
+    playOrPauseSong() {xx
         if (this.audio.paused) {
             this.isPlaying = true
             this.audio.play()
